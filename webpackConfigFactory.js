@@ -20,10 +20,11 @@ function removeEmpty(x) {
   return x.filter(y => !!y);
 }
 
+// function ifElse(condition) {
+//   return (then, or) => (condition ? then : or);
+// }
 // :: bool -> (Any, Any) -> Any
-function ifElse(condition) {
-  return (then, or) => (condition ? then : or);
-}
+const ifElse = (condition) => (then, or) => condition ? then : or
 
 // :: ...Object -> Object
 function merge() {
